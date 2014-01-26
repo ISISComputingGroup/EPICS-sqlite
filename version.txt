@@ -1,0 +1,2 @@
+SQLite 3.7.17 from http://www.sqlite.org/download.html
+easysqlite 1.0 from http://code.google.com/p/easysqlite/
