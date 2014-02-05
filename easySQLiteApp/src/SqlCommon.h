@@ -120,7 +120,7 @@ public:
 		: _msg(msg)
 	{
 	};
-	string msg()
+	string msg() const
 	{
 		return _msg;
 	}

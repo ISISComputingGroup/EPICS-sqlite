@@ -120,6 +120,7 @@ FieldSet* FieldSet::createFromDefinition(string value)
 		if (Field* field = Field::createFromDefinition(definition))
 		{
 			Field f(*field);
+			f._index = index;
 			fields.push_back(f);
 			delete field;
 		} else {
