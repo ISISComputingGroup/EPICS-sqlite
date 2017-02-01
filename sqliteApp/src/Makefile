@@ -10,6 +10,8 @@ include $(TOP)/configure/CONFIG
 
 LIBRARY_IOC += sqlite
 
+PROD_IOC += sqlite3
+
 # xxxRecord.h will be created from xxxRecord.dbd
 #DBDINC += xxxRecord
 # install sqlite.dbd into <top>/dbd
@@ -19,8 +21,10 @@ INC += sqlite3.h
 
 # specify all source files to be compiled and added to the library
 sqlite_SRCS += sqlite3.c
-
 sqlite_LIBS += $(EPICS_BASE_IOC_LIBS)
+
+sqlite3_SRCS += shell.c
+sqlite3_LIBS += sqlite $(EPICS_BASE_IOC_LIBS)
 
 #USR_LDFLAGS_WIN32 += /DEF:../sqlite3.def
 
